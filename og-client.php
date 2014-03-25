@@ -20,6 +20,24 @@ function get_og($url){
   return($results);
 }
 
-print_r(get_og("http://www.rottentomatoes.com/m/matrix/"));
+function postify_og($og){
+  $title = $og["title"];
+  $body = "";
+
+  if($og["image"]){
+    $body .= "<img src=\"" . $og["image"] . "\"><br>\n";
+  }
+
+  $body .= $og["description"];
+
+  $document = array(
+    "title" => $title,
+    "body" => $body,
+  );
+
+  return($document);
+}
+
+print_r(postify_og(get_og("http://www.rottentomatoes.com/m/matrix/")));
 
 ?>
