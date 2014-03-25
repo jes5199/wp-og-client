@@ -47,6 +47,8 @@ if(!class_exists('WP_OG_Client')) {
       $url = $_POST['og_url'];
       $post_id = wp_insert_post( post_for_og_url($url) );
 
+      set_post_format($post_id, 'link');
+
       if($post_id){
         wp_redirect( admin_url( "post.php?post=$post_id&action=edit" )) ;
       } else {
