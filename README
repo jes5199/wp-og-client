@@ -3,3 +3,5 @@ Wordpress plugin that creates link posts using OpenGraph data.
 On the "Posts" menu of your dashboard, there will be a new item "OpenGraph Post"
 Enter the URL of the link you want to post, click the button,
 and you will be taken to the Edit Post page with the title, image, and description of that link already filled in.
+
+There's no error handling: if OG data cannot be found, it just inserts a blank post, because computers are really smart.

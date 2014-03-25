@@ -1,7 +1,7 @@
 <?php
 /*
- Plugin Name: WP OpenGraph Poster
- Plugin URI: http://jes5199.com
+ Plugin Name: WP OpenGraph Client
+ Plugin URI: https://github.com/jes5199/wp-og-client
  Description: Consume OpenGraph urls into posts
  Version: 1.0.0-RC1
  Author: Jesse Wolfe
