@@ -48,6 +48,7 @@ function post_for_og_data($og){
   $post = array(
     "post_title" => $title,
     "post_content" => $body,
+    "post_type" => "link",
   );
 
   return($post);
